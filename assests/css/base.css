@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+}
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: auto;
+}
+ul {
+  list-style-type: none;
+}
+.container {
+  /*to make padding about it*/
+  width: calc(100% - 300px);
+  margin: auto;
+}
+@media screen and (max-width:767.98px){
+  .container {
+      /*to make padding about it*/
+      width: 100%;
+      margin: auto;
+      padding:0 20px;
+    }  
+  
+}
+:root {
+  --maincolor: #fb2e86;
+  --subcolor: #8a8fb9;
+  --subcolor2:#151875;
+}
+input:focus {
+  background-color: #ff4998;
+  border: 0;
+}
+/*public class*/
+/*java script*/
+.active {
+  /* we use class active to color the icon that i press on it*/
+  color: var(--maincolor) !important;
+  /*i use important to overcome the second color*/
+}
+.border-0 {
+  border: 0;
+}
+header,
+section,
+footer {
+  width: 100%;
+}
+
+a:hover {
+  color: var(--maincolor);
+}
+span {
+  color: var(--maincolor);
+  font-size: 30px;
+}
+header button,footer button {
+  padding: 20px;
+  font-size: 20px;
+  background-color: var(--maincolor);
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+p::selection {
+  background-color: green;
+  color: #fff;
+}
+.greencolor{
+  filter: hue-rotate(90deg) saturate(200%);
+}
+.bluecolor{
+  filter: hue-rotate(200deg) saturate(200%);
+}
+.pinkcolor{
+  filter: hue-rotate(300deg) saturate(300%);
+
+}
